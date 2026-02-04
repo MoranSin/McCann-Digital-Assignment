@@ -45,7 +45,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (valid) {
-      alert("הטופס נשלח בהצלחה!");
+    //     alert("תקין")
+    // //   window.location.href = "success.html";
+    // window.location.replace("success.html");
+
+
       form.submit(); // submit form if valid
     }
   });
@@ -65,4 +69,10 @@ document.addEventListener("DOMContentLoaded", () => {
       input.parentElement.appendChild(error);
     }
   }
+
+//   const highlight = input.parentElement.querySelector(".input-field");
+//   if (highlight) {
+//     highlight.style.borderBottom = "red";
+//     highlight.style.width = "100%"; // expand the line for visibility
+//   }
 });
