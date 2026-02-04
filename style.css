@@ -46,7 +46,7 @@ div.subtitle {
 }
 
 .form-group {
-    margin-bottom: 24px;
+    margin-bottom: 40px;
 }
 
 label {
@@ -54,6 +54,10 @@ label {
     font-size: 13px;
     margin-bottom: 6px;
     opacity: 0.8;
+}
+
+input{
+    color: #fff;
 }
 
 select {
@@ -297,7 +301,7 @@ button{
 }
 
 .select-field option {
-    color: black;               
+    color: black;
     background-color: white;
     padding-right: 15px;
     padding-bottom: 15px;
