@@ -30,7 +30,9 @@
 
       <div class="form-group">
         <div class="input-container">
-          <input placeholder="שם מלא*" class="input-field" type="text" required >
+          <input placeholder="שם מלא*" class="input-field" type="text" name="fullname" required
+          aria-required="true"
+          aria-describedby="fullname-hint">
           <label for="fullname" class="input-label">שם מלא*</label>
           <span class="input-highlight"></span>
         </div>
@@ -39,7 +41,10 @@
 
       <div class="form-group">
         <div class="input-container">
-          <input placeholder="נייד*" class="input-field" type="text">
+          <input placeholder="נייד*" class="input-field" type="text" name="phone"
+          required
+          aria-required="true"
+          aria-describedby="phone-hint">
           <label for="phone" class="input-label">נייד*</label>
           <span class="input-highlight"></span>
         </div>
