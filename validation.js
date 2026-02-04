@@ -8,6 +8,10 @@ document.addEventListener("DOMContentLoaded", () => {
     // Clear previous error messages
     document.querySelectorAll(".error-message").forEach(el => el.remove());
 
+    form.querySelectorAll(".input-error").forEach(el => {
+      el.classList.remove("input-error");
+    });
+
     // Fullname validation
     const fullname = form.fullname;
     if (!fullname.value.trim()) {
@@ -45,17 +49,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (valid) {
-    //     alert("תקין")
-    // //   window.location.href = "success.html";
-    // window.location.replace("success.html");
-
-
-      form.submit(); // submit form if valid
+      form.submit();
     }
   });
 
   // Function to show error message
   function showError(input, message) {
+    input.classList.remove("input-error");
     const error = document.createElement("small");
     error.classList.add("error-message");
     error.style.color = "red";
@@ -67,12 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
       input.closest(".checkbox-group").appendChild(error);
     } else {
       input.parentElement.appendChild(error);
+      input.classList.add("input-error");
     }
   }
-
-//   const highlight = input.parentElement.querySelector(".input-field");
-//   if (highlight) {
-//     highlight.style.borderBottom = "red";
-//     highlight.style.width = "100%"; // expand the line for visibility
-//   }
 });
