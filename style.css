@@ -1,9 +1,37 @@
 * {margin: 0; padding: 0;}
 
+@media (min-width: 768px) {
+  .container {
+    max-width: 32rem;
+    padding: 2rem;
+  }
+
+  .form-title {
+    font-size: 2.2rem;
+  }
+
+  .input-field,
+  .select-field {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 36rem;
+  }
+
+  .form-title {
+    font-size: 2.4rem;
+  }
+}
+
+
 body {
     background: black;
     color: white;
     font-family: 'Assistant', Arial, sans-serif;
+    font-size: 16px;
 }
 
 .header {
@@ -19,12 +47,12 @@ body {
 }
 
 .container {
-    padding: 24px 20px;
-    max-width: 420px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap:20px;
+  padding: 1.5rem 1.25rem;
+  max-width: 26rem; /* instead of 420px */
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
 }
 
 .close-btn{
@@ -37,12 +65,6 @@ body {
 h1 {
     font-size: 22px;
     margin-bottom: 6px;
-}
-
-div.subtitle {
-    font-size: 24px;
-    opacity: 0.8;
-    line-height: 24px;
 }
 
 .form-group {
@@ -118,10 +140,11 @@ select {
 }
 
 button{
-    font-size: 24px;
     font-weight: 700;
     font-style: bold;
     line-height: 24px;
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    padding: 0.9rem;
 }
 
 #agree-text {
@@ -164,16 +187,21 @@ button{
 }
 
 .form-title {
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 32px;
+  font-size: clamp(1.5rem, 5vw, 2rem); /* scales with screen */
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-size: clamp(1.1rem, 4vw, 1.5rem);
+  line-height: 1.4;
 }
 
 .title-container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 391px;
+    width: 100%;
+    max-width: 24rem;
     gap:10px;
 }
 
@@ -200,8 +228,8 @@ button{
 .input-field {
   display: block;
   width: 100%;
-  padding: 10px;
-  font-size: 24px;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  padding: 0.75rem;
   border: none;
   border-bottom: 2px solid #ccc;
   outline: none;
@@ -256,8 +284,8 @@ button{
 .select-field {
   display: block;
   width: 100%;
-  padding: 10px;
-  font-size: 24px;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  padding: 0.75rem;
   border: none;
   border-bottom: 2px solid #ccc;
   outline: none;
