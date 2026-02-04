@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>McCann Digital Assignment Moran Sinai</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="header">
+    <button aria-label="סגירת טופס" class="close-btn">✕</button>
+  </div>
+
+  <main class="container" role="main">
+    <div class="title-container">
+      <div class="main-title-container">
+        <div class="form-title"> חשמלית משפחתית</div>
+        <div class="form-title"> מחכה לכם באולמות התצוגה</div>
+      </div>
+      <div class="subtitle" id="form-desc">
+        EASY זה להשאיר פרטים ונעשה את זה
+      </div>
+    </div>
+
+    <div class="explaination">כל השדות המסומנים ב-* הינם חובה</div>
+    <form aria-labelledby="form-title" aria-describedby="form-desc">
+
+      <div class="form-group">
+        <div class="input-container">
+          <input placeholder="שם מלא*" class="input-field" type="text" required >
+          <label for="fullname" class="input-label">שם מלא*</label>
+          <span class="input-highlight"></span>
+        </div>
+        <small id="fullname-hint" class="visually-hidden">יש להזין שם מלא</small>
+      </div>
+
+      <div class="form-group">
+        <div class="input-container">
+          <input placeholder="נייד*" class="input-field" type="text">
+          <label for="phone" class="input-label">נייד*</label>
+          <span class="input-highlight"></span>
+        </div>
+        <small id="phone-hint" class="visually-hidden">יש להזין מספר טלפון נייד</small>
+      </div>
+
+      <div class="form-group">
+
+        <div class="select-container">
+          <select class="select-field" id="hall" name="hall" aria-label="בחירת אולם תצוגה">
+          <option value="">אולם תצוגה</option>
+          <option value="tel_aviv">תל אביב</option>
+          <option value="jerusalem">ירושלים</option>
+          <option value="haifa">חיפה</option>
+          <option value="rishon_lezion">ראשון לציון</option>
+          <option value="petah_tikva">פתח תקווה</option>
+          <option value="ashdod">אשדוד</option>
+          <option value="netanya">נתניה</option>
+          <option value="beersheba">באר שבע</option>
+          <option value="bnei_brak">בני ברק</option>
+          <option value="holon">חולון</option>
+          <option value="ramat_gan">רמת גן</option>
+          <option value="herzliya">הרצליה</option>
+          <option value="raanana">רעננה</option>
+          <option value="kfar_saba">כפר סבא</option>
+          <option value="modiin">מודיעין-מכבים-רעות</option>
+          <option value="rehovot">רחובות</option>
+          <option value="bat_yam">בת ים</option>
+          <option value="lod">לוד</option>
+          <option value="ramla">רמלה</option>
+          <option value="nazareth">נצרת</option>
+          <option value="acre">עכו</option>
+          <option value="tiberias">טבריה</option>
+          <option value="eilat">אילת</option>
+          </select>
+          <label for="select-field" class="select-label">אולם תצוגה</label>
+          <span class="select-highlight"></span>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="input-container">
+          <input placeholder="מייל*" class="input-field" type="email" id="email" name="email" required aria-required="true" aria-describedby="email-hint">
+          <label for="email" class="input-label">מייל*</label>
+          <span class="input-highlight"></span>
+        </div>
+
+        <small id="email-hint" class="visually-hidden">יש להזין כתובת אימייל תקינה</small>
+      </div>
+
+      <div class="checkbox-group">
+
+        <div class="content">
+          <label class="checkBox">
+            <input id="agree" type="checkbox">
+            <div class="transition"></div>
+          </label>
+        </div>
+
+        <label for="agree" id="agree-text">
+          מאשר קבלת דיוור ותוכן שיווקי ופרסומי מהחברות השונות בקבוצת  באמצעות סמס, וואטסאפ, דואר אלקטרוני, וחיוג אוטומטי. רשימת *החברות המפורטות במדיניות פרטיות של האתר
+        </label>
+      </div>
+
+      <button type="submit" class="btn-primary">
+        חזרו אלי טלפונית
+      </button>
+
+      <button type="button" class="btn-secondary">
+        למינוי חודשי אונליין
+      </button>
+
+    </form>
+  </main>
+
+</body>
+</html>
